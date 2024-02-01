@@ -45,9 +45,11 @@ const Chat = ({
               className="my-2 flex"
               style={{ justifyContent: isCurrentUser ? "left" : "right" }}
             >
-            <div className="p-2 flex-none max-w-[47%] break-words bg-green-300
-            rounded-[10px] whitespace-pre-line" style={{borderBottomRightRadius : isCurrentUser ? "0" : "10px",
-            borderBottomLeftRadius: isCurrentUser ? "10px" : "0"}} >{msg.content}</div>
+            <div className="p-2 flex-none max-w-[47%] break-words
+            rounded-[10px] whitespace-pre-line" 
+            style={{borderBottomRightRadius : isCurrentUser ? "0" : "10px",
+            borderBottomLeftRadius: isCurrentUser ? "10px" : "0",
+            backgroundColor: (isCurrentUser ? "rgb(134 239 172)" : "white")}} >{msg.content}</div>
           </div>
         </div>
       );
