@@ -38,8 +38,8 @@ const Chat = ({
       );
     } else if (msg.type === "CHAT") {
       return (
-        <div className="mx-4 my-4 flex flex-col text-right">
-            {msg.sender !== userName && <label className="mr-1 font-thin font-sans" >{msg.sender}</label>}
+        <div className="mx-4 my-4 flex flex-col">
+            {msg.sender !== userName && <label className="mr-1 font-thin font-sans text-end" >{msg.sender}</label>}
             <div
               key={msg.timeStamp}
               className="my-2 flex"
